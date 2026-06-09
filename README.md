@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Student Attendance Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A QR Code Based Student Attendance Management System built using React.js, Node.js, Express.js, and MongoDB.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* Student Registration and Management
+* QR Code Generation for Students
+* QR Code Scanning for Attendance
+* Batch/Class Management
+* Real-time Attendance Tracking
+* Attendance History and Reports
+* Responsive User Interface
+* RESTful API Integration
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* React.js
+* React Router DOM
+* Axios
+* HTML5 QR Code Scanner
 
-### `npm test`
+### Backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```text
+StudentAttendenceSystem/
+│
+├── attendence-fronted/
+│   ├── public/
+│   ├── src/
+│   └── package.json
+│
+├── Backend/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── db.js
+│   ├── index.js
+│   └── package.json
+│
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Clone Repository
 
-### `npm run eject`
+```bash
+git clone <repository-url>
+cd StudentAttendenceSystem
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Backend Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd Backend
+npm install
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Frontend Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd attendence-fronted
+npm install
+npm start
+```
 
-## Learn More
+## How It Works
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Students are registered in the system.
+2. A unique QR Code is generated for each student.
+3. Faculty scans the student's QR Code.
+4. Attendance is automatically recorded in MongoDB.
+5. Attendance records can be viewed and managed through the dashboard.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Future Enhancements
 
-### Code Splitting
+* Email Notifications
+* Attendance Analytics Dashboard
+* Export Attendance Reports (PDF/Excel)
+* Face Recognition Integration
+* Mobile Application Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Screenshots
 
-### Analyzing the Bundle Size
+Add screenshots of:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Login Page
+* Dashboard
+* Student Management
+* QR Code Generation
+* QR Code Scanner
+* Attendance Reports
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Rushi Kawale
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is developed for educational and learning purposes.
