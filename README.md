@@ -19,7 +19,6 @@ A QR Code Based Student Attendance Management System built using React.js, Node.
 
 * React.js
 * React Router DOM
-* Axios
 * HTML5 QR Code Scanner
 
 ### Backend
@@ -56,7 +55,7 @@ StudentAttendenceSystem/
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/rkkawale99/StudentAttendenceSystem
 cd StudentAttendenceSystem
 ```
 
@@ -97,11 +96,15 @@ npm start
 Add screenshots of:
 
 * Login Page
-* Dashboard
-* Student Management
+  ![Login Page](screenshots/Login.png)
+* Dashboard(Teacher)
+  ![DashBoard Page](screenshots/Dashboard(Teacher).png)
 * QR Code Generation
+ ![QR Generation Page](screenshots/GenerateQR.png)
 * QR Code Scanner
+*  ![QR Scanner Page](screenshots/ScanQr.png)
 * Attendance Reports
+   ![Batch Attendence Page](screenshots/Batch(Attendence).png)
 
 ## Author
 
